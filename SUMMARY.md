@@ -11,7 +11,11 @@
 
 ## Intermediate
 
-* [Page 2](intermediate/page-2.md)
+* [Blockchain networks](intermediate/blockchain-networks.md)
+* [Light node](intermediate/light-node.md)
+* [Blockchain transactions](intermediate/blockchain-transactions.md)
+* [Ethereum smart contract](intermediate/ethereum-smart-contract.md)
+* [IPFS](intermediate/ipfs.md)
 
 ## Advanced
 
