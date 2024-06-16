@@ -19,4 +19,12 @@
 
 ## Advanced
 
-* [Page 3](advanced/page-3.md)
+* [Cryptography of Blockchain](advanced/cryptography-of-blockchain.md)
+* [Blockchain Tree](advanced/blockchain-tree.md)
+* [Consensus](advanced/consensus.md)
+* [Mining](advanced/mining.md)
+* [Gas](advanced/gas.md)
+* [Zero-knowledge Proof](advanced/zero-knowledge-proof.md)
+* [Side-chain, bridge and Layer-2](advanced/side-chain-bridge-and-layer-2.md)
+* [DeFi](advanced/defi.md)
+* [Economic models](advanced/economic-models.md)
