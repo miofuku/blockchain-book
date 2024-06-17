@@ -4,10 +4,14 @@
 
 ## Beginner
 
-* [Block, chain and consensus](beginner/block-chain-and-consensus.md)
 * [Block](beginner/block.md)
 * [Chain](beginner/chain.md)
 * [Consensus](beginner/consensus.md)
+* [Blockchain transaction models](beginner/blockchain-transaction-models.md)
+* [Key, address and wallet](beginner/key-address-and-wallet.md)
+* [Blockchain transaction process](beginner/blockchain-transaction-process.md)
+* [ERC-20, DeFi and UniSwap](beginner/erc-20-defi-and-uniswap.md)
+* [ERC-721, NFT and Metaverse](beginner/erc-721-nft-and-metaverse.md)
 
 ## Intermediate
 

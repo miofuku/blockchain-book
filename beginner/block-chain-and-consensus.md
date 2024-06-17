@@ -1,2 +1,0 @@
-# Block, chain and consensus
-
