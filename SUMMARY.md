@@ -4,9 +4,7 @@
 
 ## Beginner
 
-* [Block](beginner/block.md)
-* [Chain](beginner/chain.md)
-* [Consensus](beginner/consensus.md)
+* [Block, Chain and Consensus](beginner/block-chain-and-consensus.md)
 * [Blockchain transaction models](beginner/blockchain-transaction-models.md)
 * [Key, address and wallet](beginner/key-address-and-wallet.md)
 * [Blockchain transaction process](beginner/blockchain-transaction-process.md)
