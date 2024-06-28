@@ -8,7 +8,7 @@ description: Data structure of Blockchain
 
 **Explanation**: The principle of hashing is to convert input of any length into output of fixed length through the hash algorithm.
 
-**Feature**: the same input will definitely get the same output, therefore different inputs will most likely get different outputs.
+**Characteristic**: the same input will definitely get the same output, therefore different inputs will most likely get different outputs.
 
 **Example**: use `md5sum` in the shell command line to calculate the MD5 hash of any charater.
 
@@ -27,3 +27,20 @@ $ md5sum <<< hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 * Bitcoin mining: SHA256
 * Data fragment proof: Merkle root
 * Text deduplication: SimHash
+
+## Block
+
+A block is composed of a block header and a transaction list (tx list). Blocks are linked together into a chain structure through the hash of the block header.
+
+### Block header
+
+Bitcoin's block header&#x20;
+
+```cpp
+int32_t nVersion; 
+uint256 hashPrevBlock; 
+uint256 hashMerkleRoot; 
+uint32_t nTime; 
+uint32_t nBits; 
+uint32_t nNonce;
+```
