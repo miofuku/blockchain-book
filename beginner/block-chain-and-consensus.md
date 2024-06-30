@@ -32,7 +32,7 @@ $ md5sum <<< hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 
 A block is composed of a block header and a transaction list (tx list). Blocks are linked together into a chain structure through the hash of the block header.
 
-### Block header
+#### Block header
 
 Bitcoin's block header&#x20;
 
@@ -73,3 +73,11 @@ Currently, we only focus on two of the fields:
 
 1. `hashPrevBlock` /`ParentHash`，hash of previous block header
 2. `hashMerkleRoot`/`TxHash`，hash of tx list
+
+#### Block body
+
+<figure><img src="../.gitbook/assets/block-body.png" alt=""><figcaption><p>The block body is the tx list</p></figcaption></figure>
+
+1. The block body is the tx list, and the block header points to the unique tx list through `TxHash`.
+2. The hash algorithm used to obtain `TxHash` from the tx hash list is called a Merkle tree, which has special properties compared to other hash algorithms (it can succinctly prove the existence of a tx within it).
+
