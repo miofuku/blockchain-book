@@ -81,3 +81,6 @@ Currently, we only focus on two of the fields:
 1. The block body is the tx list, and the block header points to the unique tx list through `TxHash`.
 2. The hash algorithm used to obtain `TxHash` from the tx hash list is called a Merkle tree, which has special properties compared to other hash algorithms (it can succinctly prove the existence of a tx within it).
 
+## Chain
+
+<figure><img src="../.gitbook/assets/chain.png" alt=""><figcaption><p>Form of a chain</p></figcaption></figure>
