@@ -10,7 +10,7 @@ description: Data structure of Blockchain
 
 **Characteristic**: the same input will definitely get the same output, therefore different inputs will most likely get different outputs.
 
-**Example**: use `md5sum` in the shell command line to calculate the MD5 hash of any charater.
+**Example**: use <mark style="color:red;">`md5sum`</mark> in the shell command line to calculate the MD5 hash of any charater.
 
 ```sh
 $ md5sum <<< haha
@@ -71,16 +71,19 @@ BaseFee *big.Int `json:"baseFeePerGas" rlp:"optional"`
 
 Currently, we only focus on two of the fields:
 
-1. `hashPrevBlock` /`ParentHash`，hash of previous block header
-2. `hashMerkleRoot`/`TxHash`，hash of tx list
+1. <mark style="color:red;">`hashPrevBlock`</mark> /<mark style="color:red;">`ParentHash`</mark>，hash of previous block header
+2. <mark style="color:red;">`hashMerkleRoot`</mark>/<mark style="color:red;">`TxHash`</mark>，hash of tx list
 
 #### Block body
 
 <figure><img src="../.gitbook/assets/block-body.png" alt=""><figcaption><p>The block body is the tx list</p></figcaption></figure>
 
-1. The block body is the tx list, and the block header points to the unique tx list through `TxHash`.
-2. The hash algorithm used to obtain `TxHash` from the tx hash list is called a Merkle tree, which has special properties compared to other hash algorithms (it can succinctly prove the existence of a tx within it).
+1. The block body is the tx list, and the block header points to the unique tx list through <mark style="color:red;">`TxHash`</mark>.
+2. The hash algorithm used to obtain <mark style="color:red;">`TxHash`</mark> from the tx hash list is called a Merkle tree, which has special properties compared to other hash algorithms (it can succinctly prove the existence of a tx within it).
 
 ## Chain
 
 <figure><img src="../.gitbook/assets/chain.png" alt=""><figcaption><p>Form of a chain</p></figcaption></figure>
+
+1. The block header points to the unique previous block header through the <mark style="color:red;">`ParentHash`</mark>, and eventually forms a chain.
+
