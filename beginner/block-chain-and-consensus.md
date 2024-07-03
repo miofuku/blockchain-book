@@ -86,4 +86,5 @@ Currently, we only focus on two of the fields:
 <figure><img src="../.gitbook/assets/chain.png" alt=""><figcaption><p>Form of a chain</p></figcaption></figure>
 
 1. The block header points to the unique previous block header through the <mark style="color:red;">`ParentHash`</mark>, and eventually forms a chain.
+   1. A block with a height of 0 is called Genesis, or the Genesis Block.
 
