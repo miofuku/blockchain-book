@@ -21,7 +21,7 @@ $ md5sum <<< hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 6f2362c812dcfd693da2e3ae537cfb4
 ```
 
-**Hash algorithms**:
+**Hash algorithms**:&#x20;
 
 * File tamper-proof: MD5
 * Bitcoin mining: SHA256
@@ -32,7 +32,7 @@ $ md5sum <<< hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 
 A block is composed of a block header and a transaction list (tx list). Blocks are linked together into a chain structure through the hash of the block header.
 
-#### Block header
+### Block header
 
 Bitcoin's block header&#x20;
 
@@ -74,7 +74,7 @@ Currently, we only focus on two of the fields:
 1. <mark style="color:red;">`hashPrevBlock`</mark> /<mark style="color:red;">`ParentHash`</mark>，hash of previous block header
 2. <mark style="color:red;">`hashMerkleRoot`</mark>/<mark style="color:red;">`TxHash`</mark>，hash of tx list
 
-#### Block body
+### Block body
 
 <figure><img src="../.gitbook/assets/block-body.png" alt=""><figcaption><p>The block body is the tx list</p></figcaption></figure>
 
@@ -86,5 +86,28 @@ Currently, we only focus on two of the fields:
 <figure><img src="../.gitbook/assets/chain.png" alt=""><figcaption><p>Form of a chain</p></figcaption></figure>
 
 1. The block header points to the unique previous block header through the <mark style="color:red;">`ParentHash`</mark>, and eventually forms a chain.
-   1. A block with a height of 0 is called Genesis, or the Genesis Block.
+   1.  A block with a height of 0 is called Genesis, or the Genesis Block.
 
+       1. Hardcoded in the program ([Github](https://github.com/bitcoin/bitcoin/blob/v22.0/src/chainparams.cpp#L53))
+       2. The Genesis Block of Bitcoin can be found at [btc.com](https://btc.com/btc/block/0), along with the message left by Satoshi Nakamoto.
+
+
+
+       <figure><img src="../.gitbook/assets/EqyhCKuXIAAOl0z.jpeg" alt=""><figcaption><p>The headline of the newspaper article recorded on the Bitcoin genesis block</p></figcaption></figure>
+   2. The block with the highest height is called the Tip, which is the latest block
+   3. You can observe the status of the Etherum chain on [Etherscan](https://etherscan.io/blocks)
+2. The combination of <mark style="color:red;">`TxHash`</mark> and <mark style="color:red;">`ParentHash`</mark> gives the blockchain its immutable characteristics.
+
+## Consensus
+
+Only the knowledge that affects data structures is discussed, without delving into consensus algorithms.
+
+### Block reward
+
+1.  **Why**: Incentivize nodes to produce blocks
+
+    1. Agree on the effectiveness of tx
+
+
+
+    <figure><img src="../.gitbook/assets/ds.png" alt=""><figcaption><p>Double-spending attack of Bitcoin</p></figcaption></figure>
