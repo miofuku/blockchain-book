@@ -106,8 +106,11 @@ Only the knowledge that affects data structures is discussed, without delving in
 
 1.  **Why**: Incentivize nodes to produce blocks
 
-    1. Agree on the effectiveness of tx
-
-
+    * Agree on the effectiveness of tx
 
     <figure><img src="../.gitbook/assets/ds.png" alt=""><figcaption><p>Double-spending attack of Bitcoin</p></figcaption></figure>
+
+* Agree on the sequence of tx
+
+2. **How**: <mark style="color:red;">`Coinbase`</mark>&#x20;
+   1.
