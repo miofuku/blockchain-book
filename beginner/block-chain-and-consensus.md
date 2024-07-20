@@ -112,5 +112,17 @@ Only the knowledge that affects data structures is discussed, without delving in
 
 * Agree on the sequence of tx
 
-2. **How**: <mark style="color:red;">`Coinbase`</mark>&#x20;
+2.  **How to**: <mark style="color:red;">`Coinbase`</mark>&#x20;
+
+    1. Include a special transaction or record in the block header in the block
+    2. Includes block reward and all tx fee/gas
+    3. Block reward is generally set to halve every n years or remain constant
+
+
+
+    <figure><img src="../.gitbook/assets/Untitled.png" alt=""><figcaption><p>Bitcoin Mining Reward Halving Table</p></figcaption></figure>
+
+## Nakamoto Consensus
+
+1. **Why**: To reach a consensus on the validity of the block
    1.
